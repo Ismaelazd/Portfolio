@@ -1,13 +1,11 @@
 import React , {useState} from 'react';
 
-
 const Services = ()=>{
-    
 
     return(
-       <section className="services bg-light pt-5">
+       <section className="services pt-5">
            <div className="container pt-5">
-                <div className="row">
+                <div className="row ">
                     <div className="col">
                         <div className="heading text-center">
                             <h6>Services</h6>
@@ -15,8 +13,8 @@ const Services = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-4">
+                <div className="row pt-5">
+                    <div className="col-md-4 mb-5">
                         
                         <div className="service-item">
                             <span className="icon">
@@ -26,7 +24,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5">
                         
                         <div className="service-item">
                             <span className="icon">
@@ -36,7 +34,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5">
                         
                         <div className="service-item">
                             <span className="icon">
@@ -46,7 +44,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5">
                     
                         <div className="service-item">
                             <span className="icon">
@@ -56,7 +54,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5">
                         
                         <div className="service-item">
                             <span className="icon">
@@ -66,7 +64,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5">
                         
                         <div className="service-item">
                             <span className="icon">
@@ -79,7 +77,6 @@ const Services = ()=>{
                 </div>
             </div>
        </section>
-
     )
 };
 export default Services;
