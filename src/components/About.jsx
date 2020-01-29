@@ -31,7 +31,7 @@ return (
                                 <a href="#"><i className="fab fa-pinterest"></i></a>
                             </div> */}
                             <span className="about-button">
-                                <a className="main-btn" href="/home/ismael/Bureau/Coding-School/React/Portfolio/src/cv.pdf" target="_blank">Download CV</a>
+                                <a className="main-btn" href="/home/ismael/Bureau/Coding-School/React/Portfolio/src/cv.pdf" target="_blank" download>Download CV</a>
                             </span>
                         </div>
 

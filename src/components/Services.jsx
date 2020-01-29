@@ -3,7 +3,7 @@ import React , {useState} from 'react';
 const Services = ()=>{
 
     return(
-       <section className="services pt-5">
+       <section className="services pt-5" id="services">
            <div className="container pt-5">
                 <div className="row ">
                     <div className="col">
