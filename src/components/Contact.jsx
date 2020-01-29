@@ -18,12 +18,12 @@ const Contact = ()=>{
 
     return(
 
-        <section className="conInfo container ">
+        <section className="conInfo container mb-5">
             <div className="row  ">
-                <div className={isMobile ? "col-md-6 meme bordTop ":"col-md-6 meme bordSide" }>
+                <div className={isMobile ? "col-md-6 meme bordTop ":"col-md-6 meme " }>
                     <Media/>
                 </div>
-                <div className="col-md-6 ">
+                <div className={isMobile ? "col-md-6 meme bordSide ":"col-md-6 meme " }>
                     <Formulaire/>
                 </div>
             </div>

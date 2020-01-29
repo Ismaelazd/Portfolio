@@ -315,9 +315,9 @@ h2 {
 .media .social-btn li a {
   text-decoration: none;
   display: inline-flex;
-  width: 60px;
-  height: 60px;
-  font-size: 18px;
+  width: 70px;
+  height: 70px;
+  font-size: 22px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -335,8 +335,8 @@ h2 {
 .media .social-btn li a::before {
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   background: linear-gradient(45deg, #b6b6b6, #202020);
   border-radius: 50%;
   z-index: -1;
@@ -344,6 +344,91 @@ h2 {
 }
 .media .social-btn li a:hover::before {
   transform: scale(0);
+}
+
+.footer {
+  background-color: #222;
+  padding-top: 10px;
+}
+.footer .contact {
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+  min-width: 100vh;
+}
+.footer .contact .container {
+  width: 900px;
+  margin: auto;
+}
+.footer .contact .container .medIc {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .contact .container .r2 hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid rgba(216, 213, 213, 0.1);
+}
+.footer .contact .container .r2 p {
+  color: white;
+}
+
+.box .icon h4::before,
+.box .icon h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #00bcd4;
+  transition: 1s;
+}
+
+.box .icon h4::before {
+  left: inherit;
+  right: 100%;
+  background: #9c27b0;
+}
+
+.box .fa:hover ~ h4::before {
+  left: initial;
+  right: -100%;
+}
+
+.box .fa:hover ~ h3::before {
+  left: -100%;
+}
+
+.box {
+  text-align: center;
+}
+
+.box .icon .fa {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.box .icon h4, .box .icon h3 {
+  position: relative;
+  overflow: hidden;
+  font-weight: 400px;
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 18px;
+  transition-delay: 0.3333s;
+  color: transparent;
+}
+
+.box .icon h4 {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.box .fa:hover ~ h3,
+.box .fa:hover ~ h4 {
+  color: white;
 }
 
 body {
@@ -376,6 +461,18 @@ html {
 .conInfo .meme {
   display: flex;
   justify-content: center;
+}
+
+.bordTop {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to top, black, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.bordSide {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

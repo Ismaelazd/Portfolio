@@ -16,7 +16,7 @@ const Media = ()=>{
                     <a href="#" className="facebook"><i className="fab fa-facebook-f"></i></a>
                 </li>
                 <li className="">
-                    <a href="#" className="twitter"><i className="fab fa-twitter"></i></a>
+                    <a href="#" className="twitter"><i class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li className="">
                     <a href="#" className="twitter"><i className="fab fa-instagram"></i></a>

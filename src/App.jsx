@@ -5,6 +5,7 @@ import Services from './components/Services'
 import SavoirEtre from './components/SavoirEtre'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 
 const App = ()=>{
@@ -17,6 +18,7 @@ const App = ()=>{
            <SavoirEtre/>
            <Skills/>
            <Contact/>
+           <Footer/>
        </Fragment>
     )
 
