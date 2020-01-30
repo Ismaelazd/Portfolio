@@ -7,7 +7,7 @@ const Header = ()=>{
 
     return(
        <section className="header">
-           <Nav/>
+           <Nav/>                                  
            <div className="banner-caption">
                 <h1>Hi! I'm Ismael.</h1>
                 <p className="cd-headline clip mt-30">

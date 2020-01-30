@@ -10,6 +10,7 @@
     position: relative
 
     .banner-caption
+        // z-index: 7 !important
         text-align: center
         padding-top: 18vh
         font-size: 200%
@@ -21,6 +22,9 @@
 
         p 
           font-size: 24px
+
+    
+
     
     .arrow 
         text-align: center
@@ -44,8 +48,22 @@
         path 
             fill: white
     
+// .header::after 
+//   content: " "
+//   position: absolute
+//   top: 0
+//   bottom: 0
+//   left: 0
+//   right: 0
+//   background-color: #000
+//   z-index: 2
+//   opacity: .5
+
+@media screen and (max-width: 767px)
+  #home-svg 
+    height: 80px
+
     
-        
 
 @-webkit-keyframes bounce 
   from,

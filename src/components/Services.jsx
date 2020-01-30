@@ -1,6 +1,23 @@
-import React , {useState} from 'react';
+import React , {useState,useEffect} from 'react';
 
 const Services = ()=>{
+
+    const [animIcon,setAnimIcon] =useState("col-md-4 mb-5 invisible")
+    const [animIcon2,setAnimIcon2] =useState("col-md-4 mb-5 invisible")
+  
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY > 795){
+                setAnimIcon('col-md-4 mb-5 animated fadeInLeft')
+                setAnimIcon2('col-md-4 mb-5 animated fadeInRight')
+            }else{
+                setAnimIcon('col-md-4 mb-5 invisible')
+                setAnimIcon2('col-md-4 mb-5 invisible')
+            }
+           
+        })
+        
+    })
 
     return(
        <section className="services pt-5" id="services">
@@ -14,7 +31,7 @@ const Services = ()=>{
                     </div>
                 </div>
                 <div className="row pt-5">
-                    <div className="col-md-4 mb-5">
+                    <div className={animIcon}>
                         
                         <div className="service-item">
                             <span className="icon">
@@ -24,7 +41,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-5">
+                    <div className={animIcon}>
                         
                         <div className="service-item">
                             <span className="icon">
@@ -34,7 +51,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-5">
+                    <div className={animIcon}>
                         
                         <div className="service-item">
                             <span className="icon">
@@ -44,7 +61,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-5">
+                    <div className={animIcon2}>
                     
                         <div className="service-item">
                             <span className="icon">
@@ -54,7 +71,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-5">
+                    <div className={animIcon2}>
                         
                         <div className="service-item">
                             <span className="icon">
@@ -64,7 +81,7 @@ const Services = ()=>{
                             <p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-5">
+                    <div className={animIcon2}>
                         
                         <div className="service-item">
                             <span className="icon">

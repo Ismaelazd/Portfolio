@@ -15,10 +15,10 @@ const Contact = ()=>{
             setIsMobile('false')
         }
     })
-
+ 
     return(
 
-        <section className="conInfo container mb-5">
+        <section className="conInfo container mb-5 pt-5">
             <div className="row  ">
                 <div className={isMobile ? "col-md-6 meme bordTop ":"col-md-6 meme " }>
                     <Media/>

@@ -1,10 +1,25 @@
-import React , {useState, Component, Fragment, } from 'react';
+import React , {useState, useEffect, Fragment, } from 'react';
 
 
-import { useEffect } from 'react';
 
 const Skills = ()=>{
 
+  const [animIcon,setAnimIcon] =useState("invisible")
+  const [animIcon2,setAnimIcon2] =useState("invisible")
+
+  useEffect(()=>{
+      window.addEventListener('scroll',()=>{
+          if(window.scrollY > 1800){
+              setAnimIcon('chart__title')
+              setAnimIcon2('chart__bar')
+          }else{
+              setAnimIcon('invisible')
+              setAnimIcon2('invisible')
+          }
+         
+      })
+      
+  })
  
     return(
         
@@ -14,59 +29,59 @@ const Skills = ()=>{
 
   <div className="charts">
     <div className="chart chart--dev">
-      <span className="chart__title">Development</span>
+      <span className={animIcon}>Development</span>
       <ul className="chart--horiz">
-        <li className="chart__bar" id='html'    >
+        <li className={animIcon2} id='html'    >
           <span className="chart__label">
             HTML5
           </span>
         </li>
-        <li className="chart__bar" id='css'     >
+        <li className={animIcon2} id='css'     >
           <span className="chart__label">
             CSS3 & SCSS
           </span>
         </li>
-        <li className="chart__bar" id="js"      >
+        <li className={animIcon2} id="js"      >
           <span className="chart__label">
             JavaScript
           </span>
         </li>
-        <li className="chart__bar" id="AngularJs"   >
+        <li className={animIcon2} id="AngularJs"   >
           <span className="chart__label">
             AngularJS
           </span>
         </li>
-        <li className="chart__bar" id="ReactJS"     >
+        <li className={animIcon2} id="ReactJS"     >
           <span className="chart__label">
             ReactJS
           </span>
         </li>
-        <li className="chart__bar" id="jquery"      >
+        <li className={animIcon2} id="jquery"      >
           <span className="chart__label">
             jQuery
           </span>
         </li>
-        <li className="chart__bar" id="nodejs"      >
+        <li className={animIcon2} id="nodejs"      >
           <span className="chart__label">
             NodeJS
           </span>
         </li>
-        <li className="chart__bar" id="grunt"   >
+        <li className={animIcon2} id="grunt"   >
           <span className="chart__label">
             Grunt / Gulp / Webpack
           </span>
         </li>
-        <li className="chart__bar" id="net"     >
+        <li className={animIcon2} id="net"     >
           <span className="chart__label">
             .NET
           </span>
         </li>
-        <li className="chart__bar" id="umbraco"     >
+        <li className={animIcon2} id="umbraco"     >
           <span className="chart__label">
             Umbraco
           </span>
         </li>
-        <li className="chart__bar" id="sitecore"    >
+        <li className={animIcon2} id="sitecore"    >
           <span className="chart__label">
             Sitecore
           </span>
@@ -77,12 +92,12 @@ const Skills = ()=>{
     <div className="chart chart--prod">
       <span className="chart__title">Productivity</span>
       <ul className="chart--horiz">
-      <li className="chart__bar" id="git"   >
+      <li className={animIcon2} id="git"   >
         <span className="chart__label">
           Git + Github, Bitbucket & Sourcetree
         </span>
       </li>
-      <li className="chart__bar" id="microsoft"     >
+      <li className={animIcon2} id="microsoft"     >
         <span className="chart__label">
           Microsoft Office
         </span>
@@ -93,17 +108,17 @@ const Skills = ()=>{
     <div className="chart chart--design">
       <span className="chart__title">Design</span>
       <ul className="chart--horiz">
-      <li className="chart__bar" id="ph"    >
+      <li className={animIcon2} id="ph"    >
         <span className="chart__label">
           Photoshop
         </span>
       </li>
-      <li className="chart__bar" id="illu"      >
+      <li className={animIcon2} id="illu"      >
         <span className="chart__label">
           Illustrator
         </span>
       </li>
-      <li className="chart__bar" id="ue"    >
+      <li className={animIcon2} id="ue"    >
         <span className="chart__label">
           User Experience
         </span>

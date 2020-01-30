@@ -1,6 +1,19 @@
-import React , {useState, Fragment} from 'react';
+import React , {useState, useEffect} from 'react';
 
 const Formulaire = ()=>{
+    const [animIcon,setAnimIcon] =useState("invisible row r2")
+
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY > 3100){
+                setAnimIcon('row r2 animated fadeInUp')
+            }else{
+                setAnimIcon('invisible row r2')
+            }
+           
+        })
+        
+    })
 
     return(
       
@@ -15,7 +28,7 @@ const Formulaire = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className="row r2" >
+                <div className={animIcon} >
                     <div className="col-lg-10 offset-lg-1">
                        
                         <form id="contact-form" method="POST"><input type="hidden" name="form-name" value="contactForm"/>

@@ -1,8 +1,23 @@
 import React , {useState, Fragment} from 'react';
+import { useEffect } from 'react';
 
 
 
 const Media = ()=>{
+
+    const [animIcon,setAnimIcon] =useState("invisible")
+
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY > 3150){
+                setAnimIcon('animated fadeInUp')
+            }else{
+                setAnimIcon('animated fadeOutDown')
+            }
+           
+        })
+        
+    })
 
     return(
         <section className="media">
@@ -12,13 +27,13 @@ const Media = ()=>{
             </div>
             
             <ul className="social-btn">
-                <li className="">
+                <li className={animIcon}>
                     <a href="#" className="facebook"><i className="fab fa-facebook-f"></i></a>
                 </li>
-                <li className="">
-                    <a href="#" className="twitter"><i class="fab fa-linkedin-in"></i></a>
+                <li className={animIcon}>
+                    <a href="#" className="twitter"><i className="fab fa-linkedin-in"></i></a>
                 </li>
-                <li className="">
+                <li className={animIcon}>
                     <a href="#" className="twitter"><i className="fab fa-instagram"></i></a>
                 </li>
             </ul>
