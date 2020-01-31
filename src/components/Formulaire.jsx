@@ -5,7 +5,7 @@ const Formulaire = ()=>{
 
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
-            if(window.scrollY > 3100){
+            if(window.scrollY > 3350){
                 setAnimIcon('row r2 animated fadeInUp')
             }else{
                 setAnimIcon('invisible row r2')

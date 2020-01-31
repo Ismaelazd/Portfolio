@@ -1,20 +1,37 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import image from '../img/guy.jpg'
 
 const About = () => {
 
+    const [animIcon,setAnimIcon] =useState("col-lg-5 col-md-6 pb-4 invisible")
+    const [animIcon2,setAnimIcon2] =useState("col-lg-7 col-md-6 invisible")
+  
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY > 400){
+                setAnimIcon('col-lg-5 col-md-6 pb-5 animated fadeInLeft')
+                setAnimIcon2('col-lg-7 col-md-6 animated fadeInRight')
+            }else{
+                setAnimIcon('col-lg-5 col-md-6 pb-4 invisible')
+                setAnimIcon2('col-lg-7 col-md-6 invisible')
+            }
+           
+        })
+        
+    })
 return (
+
 
     <section id="about">
         <div className="container">
             <div className="row">
-                <div className="col-lg-5 col-md-6" >
-                    <div className="about-img ">
+                <div className={animIcon}>
+                    <div className="about-img text-center">
                         <img className="" src={image} alt=""/>
                     </div>
     
                 </div>
-                <div className="col-lg-7 col-md-6">
+                <div className={animIcon2}>
                     <div className="about-content">
                             <div className="about-heading mb-4">
                                 <h2>About Me.</h2>

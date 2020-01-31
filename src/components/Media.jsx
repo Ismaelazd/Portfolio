@@ -9,7 +9,7 @@ const Media = ()=>{
 
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
-            if(window.scrollY > 3150){
+            if(window.scrollY > 3350){
                 setAnimIcon('animated fadeInUp')
             }else{
                 setAnimIcon('animated fadeOutDown')
@@ -28,13 +28,13 @@ const Media = ()=>{
             
             <ul className="social-btn">
                 <li className={animIcon}>
-                    <a href="#" className="facebook"><i className="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="" className="https://www.facebook.com/ismael.azd"><i className="fab fa-facebook-f"></i></a>
                 </li>
                 <li className={animIcon}>
-                    <a href="#" className="twitter"><i className="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/isma%C3%ABl-azoud-435a52198/" className="twitter"><i className="fab fa-linkedin-in"></i></a>
                 </li>
                 <li className={animIcon}>
-                    <a href="#" className="twitter"><i className="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/ismaelazd/" className="twitter"><i className="fab fa-instagram"></i></a>
                 </li>
             </ul>
         </section>

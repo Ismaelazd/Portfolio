@@ -97,6 +97,27 @@
   text-transform: uppercase;
   font-size: 13px;
 }
+.collapse .navbar-nav li a::before, .collapse .navbar-nav li a::after {
+  content: "";
+  background-color: red;
+  height: 3px;
+  position: absolute;
+  bottom: 0px;
+  width: 0;
+}
+.collapse .navbar-nav li a:hover {
+  color: blue;
+}
+.collapse .navbar-nav li a:hover::after {
+  width: 50%;
+  right: 50%;
+  transition: width 1s ease-in-out;
+}
+.collapse .navbar-nav li a:hover::before {
+  width: 50%;
+  left: 50%;
+  transition: width 1s ease-in-out;
+}
 
 nav.fixed-top .nav-item .nav-link:hover:before {
   background-color: #000;
@@ -517,6 +538,14 @@ html {
   border-width: 3px;
   border-style: solid;
   border-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
