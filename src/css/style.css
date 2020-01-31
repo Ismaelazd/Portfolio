@@ -4,7 +4,7 @@
 
 .header {
   height: 100vh;
-  background-image: url("../img/bg5.jpg");
+  background-color: #222222;
   background-size: cover;
   background-position: center;
   overflow: hidden;
