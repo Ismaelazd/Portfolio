@@ -15,10 +15,9 @@ const Skills = ()=>{
           }else{
               setAnimIcon('invisible')
               setAnimIcon2('invisible')
-          }
-         
+          } 
       })
-      
+  
   })
  
     return(
@@ -104,7 +103,7 @@ const Skills = ()=>{
       </li>
     </ul>
     </div>
-    
+
     <div className="chart chart--design">
       <span className="chart__title">Design</span>
       <ul className="chart--horiz">
